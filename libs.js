@@ -1074,7 +1074,7 @@ angular.module('osm.services').factory('osmSettingsService',
                     return this.localStorage.overpassAPI;
                 }else{
                     //return 'http://api.openstreetmap.org/api';
-                    return 'http://overpass-api.de/api/interpreter';
+                    return 'https://overpass-api.de/api/interpreter';
                 }
             },
             setOverpassAPI: function(overpassAPI){
