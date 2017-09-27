@@ -932,7 +932,7 @@ angular.module('osm.services').factory('overpassAPI',
                 var url = osmSettingsService.getOverpassAPI();
                 var deferred = $q.defer();
                 var self = this;
-                var headers = {'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'};
+                var headers = {'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8', 'Origin': location.origin};
                 $http.post(
                     url,
                     'data='+encodeURIComponent(query),
